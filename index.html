@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tridev Yuvak Mandal Doldhar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('https://source.unsplash.com/1600x900/?himalaya,village,nature') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      position: sticky; top: 0; z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 1.3rem; color: #ffcc00;
+    }
+
+    nav ul {
+      display: flex; list-style: none; gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none; color: white; font-size: 0.9rem; transition: 0.3s;
+    }
+
+    nav ul li a:hover { color: #ffcc00; }
+
+    section {
+      padding: 50px 20px; text-align: center;
+    }
+
+    .hero {
+      min-height: 60vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem; margin-bottom: 10px; color: #ffcc00;
+    }
+
+    .hero p { max-width: 600px; line-height: 1.6; }
+
+    .details, .objectives {
+      background: rgba(255,255,255,0.1);
+      margin: 20px auto; max-width: 800px;
+      padding: 25px; border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    }
+
+    .details h3, .objectives h3, .gallery h3 {
+      color: #ffcc00; margin-bottom: 15px;
+    }
+
+    .objectives ul {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .objectives ul li {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px; margin-top: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%; border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .join {
+      margin-top: 25px;
+    }
+
+    .join a {
+      display: inline-block;
+      background: #ffcc00;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .join a:hover { background: #ffaa00; }
+
+    footer {
+      background: rgba(0,0,0,0.9);
+      text-align: center;
+      padding: 12px; font-size: 0.8rem;
+    }
+	
+	
+  .social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.7);
+    padding: 10px 5px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+  }
+
+  .social-sidebar a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-sidebar a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+  }
+
+  /* Icons size for mobile */
+  @media (max-width: 600px) {
+    .social-sidebar a {
+      font-size: 18px;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+
+<div class="social-sidebar">
+  <a href="https://www.instagram.com/tridev_yuvak_mandal_doldhar?igsh=MWRhY2RyYm40dWlxZQ==" target="_blank" title="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+     width="40" height="40" viewBox="0 0 24 24">
+  <linearGradient id="IGgrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#f58529"/>
+    <stop offset="25%" stop-color="#feda77"/>
+    <stop offset="50%" stop-color="#dd2a7b"/>
+    <stop offset="75%" stop-color="#8134af"/>
+    <stop offset="100%" stop-color="#515bd4"/>
+  </linearGradient>
+  <path fill="url(#IGgrad)" d="M12 2.2c3.2 0 3.6.01 4.9.07 
+   1.3.06 2 .28 2.5.47.6.23 1 .5 1.5 1 .5.5.8.9 1 
+   1.5.2.5.4 1.2.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 
+   4.9c-.1 1.3-.3 2-.5 2.5-.2.6-.5 1-1 
+   1.5-.5.5-.9.8-1.5 1-.5.2-1.2.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 
+   0-4.9-.1c-1.3-.1-2-.3-2.5-.5-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.4-1.2-.5-2.5C2.2 
+   15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.3.3-2 
+   .5-2.5.2-.6.5-1 1-1.5.5-.5.9-.8 
+   1.5-1 .5-.2 1.2-.4 2.5-.5C8.4 
+   2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 
+   6 .1 5.2.3 4.6.6 3.9.9 3.3 1.3 
+   2.7 1.9c-.6.6-1 1.2-1.3 1.9-.3.6-.5 
+   1.4-.6 2.5C.7 7.3.7 7.7.7 12s0 4.7.1 
+   5.9c.1 1.1.3 1.9.6 2.5.3.7.7 1.3 
+   1.3 1.9.6.6 1.2 1 1.9 1.3.6.3 1.4.5 
+   2.5.6 1.2.1 1.6.1 5.9.1s4.7 0 
+   5.9-.1c1.1-.1 1.9-.3 2.5-.6.7-.3 
+   1.3-.7 1.9-1.3.6-.6 1-1.2 
+   1.3-1.9.3-.6.5-1.4.6-2.5.1-1.2.1-1.6.1-5.9s0-4.7-.1-5.9c-.1-1.1-.3-1.9-.6-2.5-.3-.7-.7-1.3-1.3-1.9-.6-.6-1.2-1-1.9-1.3-.6-.3-1.4-.5-2.5-.6C16.7.1 16.3 0 12 0Z"/>
+  <circle fill="white" cx="12" cy="12" r="3.5"/>
+  <circle fill="white" cx="18" cy="6" r="1.2"/>
+</svg>
+
+  </a>
+  <a href="https://www.facebook.com/share/1A6eghvuEv/" target="_blank" title="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+     width="40" height="40" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+  <path fill="#fff" d="M15.1 12h-2.2v8h-3.3v-8H8.6v-2.8h1.9V7.9c0-1.6.8-4.1 
+   4.1-4.1h2.4v2.7h-1.7c-.3 0-.8.2-.8.9v1.8h2.6L15.1 12z"/>
+</svg>
+
+  </a>
+  <a href="https://x.com/tridevyuvak671/status/1943927310417272964?t=Ni7ENbAjiFHItScFuSk6BQ&s=08" target="_blank" title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+     width="40" height="40" viewBox="0 0 24 24" fill="black">
+  <path d="M18.244 2.25h3.308l-7.227 8.26 
+           8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 
+           2.25H8.08l4.713 6.231 5.451-6.231zM17.084 
+           19.95h1.833L7.048 4.126H5.077l12.007 15.823z"/>
+</svg>
+
+  </a>
+  <a href="mailto:tridevyuvamandaldoldhar@gmail.com" target="_blank" title="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+     width="40" height="40" viewBox="0 0 48 48">
+  <path fill="#EA4335" d="M24 24L4.5 9.75V38.25C4.5 39.49 5.51 40.5 6.75 40.5H14.25V24L24 31.5L33.75 24V40.5H41.25C42.49 40.5 43.5 39.49 43.5 38.25V9.75L24 24Z"/>
+  <path fill="#FBBC05" d="M4.5 9.75L24 24L43.5 9.75V6.75C43.5 5.51 42.49 4.5 41.25 4.5H6.75C5.51 4.5 4.5 5.51 4.5 6.75V9.75Z"/>
+  <path fill="#34A853" d="M33.75 24L24 31.5L14.25 24V40.5H33.75V24Z"/>
+  <path fill="#4285F4" d="M41.25 4.5H6.75C5.51 4.5 4.5 5.51 4.5 6.75V9.75L24 24L43.5 9.75V6.75C43.5 5.51 42.49 4.5 41.25 4.5Z"/>
+</svg>
+
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Navigation -->
+  <nav>
+    <h1>Tridev Yuvak Mandal</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#objectives">Udeshya</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#join">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <h2>Tridev Yuvak Mandal Doldhar</h2>
+    <p>
+      Placed at - Doldhar village <br>
+      Vikas Khand - Dhnotu <br>
+      Post Office - Movi Devi Galoo <br>
+      Teh - Sundernagar <br>
+      Distt - Mandi HP 175031
+    </p>
+  </section>
+
+  <!-- Details -->
+  <section class="details">
+    <h3>About Us</h3>
+    <p>
+      Tridev Yuvak Mandal Doldhar ek samajik aur sanskritik sangathan hai jo gaon aur samaj ke vikas ke liye karyarat hai.
+      Humara uddeshya yuvaon ko ekjut karke samajik seva, sanskritik gatividhiyon aur gaon ke vikas me yogdan dena hai.
+    </p>
+  </section>
+
+  <!-- Objectives -->
+  <section class="objectives" id="objectives">
+    <h3>Udeshya (Objectives)</h3>
+    <ul>
+      <li>Gaon ke yuvaon ko ekjut karna aur unka margdarshan karna.</li>
+      <li>Samajik aur sanskritik gatividhiyon ka ayojan.</li>
+      <li>Gaon me safai, vatavaran aur vikas pariyojnao me yogdan.</li>
+      <li>Yuvaon me khel, kala aur shiksha ke prati jagrukta lana.</li>
+      <li>Samajik ekta aur bhai chara ko badhava dena.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery-grid">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipOR-zcUsptxsmhCj4b48EJBaDCUTmQq7rFQ4VFJ=s1360-w1360-h1020-rw" alt="Gallery 1">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPdzINQn000ml7OiCWDf9v_fmIKAPPYhVkK0SUJ=s1360-w1360-h1020-rw" alt="Gallery 2">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPtTlNdgwEdN3IoA73jEqniPr4Ab6RNwpf9hjsC=s1360-w1360-h1020-rw" alt="Gallery 3">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrvsxxy8r7XO-70QCiqZL3uMpUeed9JhGwup62ovQG7H8TuD59RHXGx9Q1DuUP1JwWaQ48R5kQCPV2NfPLLLgMkFWCZcIeip8h5qySSDyxwACyhKs_DQOhUzV42Y6qjF0QgsrAUbBnhY8wz=s1360-w1360-h1020-rw" alt="Gallery 4">
+    </div>
+  </section>
+
+  <!-- Join Us -->
+  <section class="join" id="join">
+    <h3>Join Tridev Yuvak Mandal</h3>
+    <p>Agar aap humse judna chahte hain to neeche diye gaye link par click kijiye:</p>
+    <a href="https://docs.google.com/forms/d/1w3TlF3MdH0cWG9yK_f00hkYK8pCfwwTOehHlG8kHt8o/edit?pli=1#responses" target="_blank">
+      Fill Google Form
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Tridev Yuvak Mandal Doldhar. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
