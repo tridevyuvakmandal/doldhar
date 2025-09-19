@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Our Team — Tridev Yuvak Mandal</title>
+  <style>
+    body{font-family:"Segoe UI",sans-serif;margin:0;background:#fafafa;color:#111;}
+    header,footer{background:#111;color:#fff;padding:1rem;text-align:center;}
+    nav a{color:#fff;text-decoration:none;margin:0 0.8rem;}
+    section{padding:3rem 1rem;max-width:1200px;margin:auto;text-align:center;}
+    h1,h2{color:#ff5722;margin-bottom:1.5rem;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;}
+    .card{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);text-align:center;}
+    .card img{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:0.8rem;}
+    .card h3{margin-bottom:0.3rem;color:#ff5722;}
+    .card p{color:#666;font-size:0.9rem;margin:0;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tridev Yuvak Mandal Team</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Meet Our Team</h2>
+  <div class="grid">
+    <!-- Team Members -->
+    <!-- 40 members with placeholder images -->
+    <!-- You can replace image URLs and names later -->
+    <script>
+      const grid = document.querySelector(".grid");
+      const roles = ["President","Secretary","Treasurer","Social Media Manager","Coordinator","Member"];
+      for(let i=1;i<=40;i++){
+        let card = document.createElement("div");
+        card.className="card";
+        card.innerHTML = `
+          <img src="https://picsum.photos/200/200?random=${i}" alt="Team Member ${i}">
+          <h3>Member ${i}</h3>
+          <p>${roles[i % roles.length]}</p>
+        `;
+        grid.appendChild(card);
+      }
+    </script>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Tridev Yuvak Mandal</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

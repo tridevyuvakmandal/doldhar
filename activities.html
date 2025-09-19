@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Activities — Tridev Yuvak Mandal</title>
+  <style>
+    body{font-family:"Segoe UI",sans-serif;margin:0;background:#fafafa;color:#111;}
+    header,footer{background:#111;color:#fff;padding:1rem;text-align:center;}
+    nav a{color:#fff;text-decoration:none;margin:0 0.8rem;}
+    section{padding:3rem 1rem;max-width:1000px;margin:auto;text-align:center;}
+    h1{color:#ff5722;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
+    .card{background:#fff;padding:1.5rem;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    .card span{font-size:2rem;display:block;margin-bottom:0.5rem;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Our Activities</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+	<a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <div class="grid">
+    <div class="card"><span>🌳</span><h3>Tree Plantation Drives</h3><p>We organize plantation campaigns for a greener environment.</p></div>
+    <div class="card"><span>🏐</span><h3>Sports Tournaments</h3><p>Encouraging youth participation in games and competitions.</p></div>
+    <div class="card"><span>🩸</span><h3>Blood Donation Camps</h3><p>Regular camps for serving humanity in times of need.</p></div>
+    <div class="card"><span>📚</span><h3>Education Guidance</h3><p>Workshops and counseling for career and studies.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Tridev Yuvak Mandal</p>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>

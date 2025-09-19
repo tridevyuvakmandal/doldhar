@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — Tridev Yuvak Mandal</title>
+  <style>
+    body{font-family:"Segoe UI",sans-serif;margin:0;background:#fafafa;color:#111;}
+    header,footer{background:#111;color:#fff;padding:1rem;text-align:center;}
+    nav a{color:#fff;text-decoration:none;margin:0 0.8rem;}
+    section{padding:3rem 1rem;max-width:1000px;margin:auto;text-align:center;}
+    h1{color:#ff5722;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+    img{width:100%;border-radius:10px;object-fit:cover;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Our Gallery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+	<a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <div class="grid">
+    <img src="https://picsum.photos/400/300?1" alt="">
+    <img src="https://picsum.photos/400/300?2" alt="">
+    <img src="https://picsum.photos/400/300?3" alt="">
+    <img src="https://picsum.photos/400/300?4" alt="">
+    <img src="https://picsum.photos/400/300?5" alt="">
+    <img src="https://picsum.photos/400/300?6" alt="">
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Tridev Yuvak Mandal</p>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
